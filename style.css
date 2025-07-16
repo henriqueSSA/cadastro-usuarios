@@ -57,6 +57,25 @@ body {
     margin-bottom: 60px;
 }
 
+.imagem-cadastro, .imagem-listar {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .main{
+    width: 100%;
+  }
+}
+
+.style-cadastro, .style-listar{
+    font-size: 1.2em;
+    border: 5px solid #3d1dc9;
+    border-radius: 10px;
+
+}
+
 
 
 
