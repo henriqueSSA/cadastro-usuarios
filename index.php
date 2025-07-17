@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Cadastro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/favicon-azul.ico" type="image/x-icon">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <main class="main">
         <div class="style-header">
@@ -18,15 +21,15 @@
                 <img src="imagens/imagem-cadastro.png" alt="imagem que ilustra o Cadastro" class="imagem-cadastro">
                 <h3>Iniciar Cadastro</h3>
                 <h4>Cadastre novos usuários com validações</h4>
-                <h5 class="style-cadastro">Começar Cadastro</h5>
+                <button class="style-cadastro" type="button" onclick="RedirectForms()">Começar Cadastro</button>
             </div>
             <div class="style-box  listar-cadastros">
                 <img src="imagens/imagem-listar.png" alt="imagem que ilustra o Cadastro" class="imagem-listar">
                 <h3>Listar Cadastros</h3>
                 <h4>Veja todos os cadastros feitos</h4>
-                <h5 class="style-listar">Ver Cadastros</h5>
+                <button class="style-listar" type="button" onclick="alert('Hello World!')">Ver Cadastros</button>
             </div>
-        </div>         
+        </div>
     </main>
     <footer>
         <div class="style-footer">
