@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 html,
+
+/* css do arquivo index.php */
 body {
     height: 100%;
     margin: 0;
@@ -76,6 +78,15 @@ body {
     border-radius: 10px;
     padding: 5%;
     background: rgb(69, 69, 224);
+}
+
+/* fim do css arquivo index.php */
+
+.style-form{
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+
 }
 
 
