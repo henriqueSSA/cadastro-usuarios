@@ -21,7 +21,7 @@
                 <img src="imagens/imagem-cadastro.png" alt="imagem que ilustra o Cadastro" class="imagem-cadastro">
                 <h3>Iniciar Cadastro</h3>
                 <h4>Cadastre novos usuários com validações</h4>
-                <button class="style-cadastro" type="button" onclick="RedirectForms()">Começar Cadastro</button>
+                <button class="style-cadastro" id="style-cadastro" type="button" onclick="RedirectForms()">Começar Cadastro</button>
             </div>
             <div class="style-box  listar-cadastros">
                 <img src="imagens/imagem-listar.png" alt="imagem que ilustra o Cadastro" class="imagem-listar">

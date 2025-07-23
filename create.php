@@ -30,8 +30,10 @@
                 <input type="date" id="data_nasc" name="data_nasc" max="2009-07-20" required><br><br>
                 <label for="idade">Idade:</label><br>
                 <input type="number" id="idade" name="idade" required><br>
-                <button class="style-btcadastro" type="button" onclick="RedirectForms()">Proximo</button>
-
+                <div class="style-btcadastro-container">
+                <button class="style-cadastro"  type="button" onclick="RedirectForms()">Anterior</button>
+                <button class="style-cadastro"  type="button" onclick="RedirectForms()">Salvar</button>
+                </div>
         </div>
 
         <!-- Segunda Etapa do Formulário -->
@@ -47,7 +49,10 @@
             <input type="number" id="numero" name="numero" required><br><br>
             <label for="cidade">Cidade:</label><br>
             <input type="text" id="cidade" name="cidade" required><br>
-            <button class="style-btcadastro" type="button" onclick="RedirectForms()">Proximo</button>
+            <div class="style-btcadastro-container">
+            <button class="style-cadastro" type="button" onclick="RedirectForms()">Anterior</button>
+            <button class="style-cadastro" type="button" onclick="RedirectForms()">Salvar</button>
+            </div>
             </form>
         </div>
 

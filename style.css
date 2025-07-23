@@ -103,20 +103,31 @@ body {
 
 }
 
-.style-btcadastro{
+.style-btcadastro-container{
+    font-size: 1.2em;  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:center;
+    gap: 70px;
+}
+
+.style-cadastro{
     font-size: 1.2em;
     color: rgb(236, 228, 228);
     border: 2px solid #fcf9f9;
     border-radius: 10px;
-    padding: 5%;
+    padding: 2%;
     background: rgb(69, 69, 224);
-    margin-top: 20%;
-    margin-left: 30%;
-
 }
 
-#data_nasc, #idade{
+#data_nasc{
     width: 100px;
+    height: 30px;
+}
+
+#idade{
+    width: 40px;
     height: 30px;
 }
 
@@ -132,7 +143,7 @@ body {
 
 #cep, #uf, #bairro, #numero, #cidade {
     width: 100%;
-    height: 60px;
+    height: 30px;
     font-size: 16px;
 }
 
@@ -148,13 +159,13 @@ body {
 .barra-progresso {
   height: 100%;
   background-color: #3498db;
-  width: 25%;
+  width: 50%;
   animation: carregar25 2s ease-out forwards;
 }
 
-@keyframes preencherDe25a100 {
+@keyframes preencherDe50a100 {
   from {
-    width: 25%;
+    width: 50%;
   }
   to {
     width: 100%;
