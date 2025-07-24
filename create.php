@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>   
     <link rel="icon" href="imagens/favicon-azul.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -32,8 +32,8 @@
                 <label for="idade">Idade:</label><br>
                 <input type="number" id="idade" name="idade" required><br>
                 <div class="style-btcadastro-container">
-                <button class="style-cadastro"  type="button" onclick="home()">Anterior</button>
-                <button class="style-cadastro"  type="button" onclick="proximoForm()">Salvar</button>
+                    <button class="style-cadastro" type="button" onclick="home()">Anterior</button>
+                    <button class="style-cadastro" type="button" onclick="proximoForm()">Proximo</button>
                 </div>
         </div>
 
@@ -41,7 +41,7 @@
         <div class="style-form2" id="style-form2">
 
             <label for="cep">CEP:</label><br>
-            <input type="text" id="cep" name="cep" required><br><br>
+            <input type="text" id="cep" name="cep" placeholder="00000-000" required><br><br>
             <label for="uf">UF:</label><br>
             <input type="text" id="uf" name="uf" required><br><br>
             <label for="bairro">Bairro:</label><br>
@@ -51,8 +51,8 @@
             <label for="cidade">Cidade:</label><br>
             <input type="text" id="cidade" name="cidade" required><br>
             <div class="style-btcadastro-container">
-            <button class="style-cadastro" type="button" onclick="RedirectForms()">Anterior</button>
-            <button class="style-cadastro" type="button" onclick="mostrarLoading()">Salvar</button>
+                <button class="style-cadastro" type="button" onclick="RedirectForms()">Anterior</button>
+                <button class="style-cadastro" type="button" onclick="mostrarLoading()">Salvar</button>
             </div>
             </form>
         </div>
