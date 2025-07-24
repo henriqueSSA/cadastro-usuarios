@@ -1,6 +1,17 @@
 function RedirectForms() {
     window.location.href = "create.php";
+    
+
 }
+
+function home() {
+    window.location.href = "index.php";
+    
+}
+
+$(document).ready(function () {
+  $('#cpf').mask('000.000.000-00');
+});
 
 
 function mostrarLoading() {
@@ -9,16 +20,12 @@ function mostrarLoading() {
 }
 
 function proximoForm() {
-    // Mostra o primeiro formulario
-    document.getElementById('style-cadastro').style.display = 'none';
-    document.getElementById('style-cadastro').style.display = 'block';
+    // Vai para o proximo formulario
+    document.getElementById('style-form1').style.display = 'none';
+    document.getElementById('style-form2').style.display = 'block';
 }
 
-function proximaEtapa() {
-    // Mostra o segundo formulario
-    document.getElementById('style-btform1').style.display = 'none';
-    document.getElementById('style-btform1').style.display = 'block';
-}
+
 
 
 

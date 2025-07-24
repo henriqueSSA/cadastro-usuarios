@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <link rel="icon" href="imagens/favicon-azul.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Novo Cadastro</title>
 </head>
 
@@ -18,8 +19,8 @@
         </div>
         <h1>Formulário Multi-Etapas</h1>
         <!-- Primeira Etapa do Formulário -->
-        <div class="style-form">
-            <form action="/action_page.php" autocomplete="on" onsubmit="mostrarLoading()">
+        <div class="style-form1" id="style-form1">
+            <form action="/action_page.php" autocomplete="on">
                 <label for="name">Nome:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
                 <label for="cpf">CPF:</label><br>
@@ -31,13 +32,13 @@
                 <label for="idade">Idade:</label><br>
                 <input type="number" id="idade" name="idade" required><br>
                 <div class="style-btcadastro-container">
-                <button class="style-cadastro"  type="button" onclick="RedirectForms()">Anterior</button>
-                <button class="style-cadastro"  type="button" onclick="RedirectForms()">Salvar</button>
+                <button class="style-cadastro"  type="button" onclick="home()">Anterior</button>
+                <button class="style-cadastro"  type="button" onclick="proximoForm()">Salvar</button>
                 </div>
         </div>
 
         <!-- Segunda Etapa do Formulário -->
-        <div class="style-form">
+        <div class="style-form2" id="style-form2">
 
             <label for="cep">CEP:</label><br>
             <input type="text" id="cep" name="cep" required><br><br>
@@ -51,16 +52,13 @@
             <input type="text" id="cidade" name="cidade" required><br>
             <div class="style-btcadastro-container">
             <button class="style-cadastro" type="button" onclick="RedirectForms()">Anterior</button>
-            <button class="style-cadastro" type="button" onclick="RedirectForms()">Salvar</button>
+            <button class="style-cadastro" type="button" onclick="mostrarLoading()">Salvar</button>
             </div>
             </form>
         </div>
 
     </div>
 
-    <script>
-        $('#cpf').mask('000.000.000-00');
-    </script>
 
 </body>
 
