@@ -165,7 +165,7 @@ body {
   height: 100%;
   background-color: #3498db;
   width: 50%;
-  animation: carregar25 2s ease-out forwards;
+  animation: preencherDe50a100 2s ease-out forwards;
 }
 
 @keyframes preencherDe50a100 {
@@ -175,7 +175,9 @@ body {
   to {
     width: 100%;
   }
-} 
+}
+
+
 
 
 

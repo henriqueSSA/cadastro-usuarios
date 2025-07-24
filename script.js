@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 function mostrarLoading() {
     // Mostra o loading
-    document.getElementById('barra-progresso').style.display = 'block';
+    document.getElementById('barra-progresso').style.display = 'none';
 }
 
 function proximoForm() {
