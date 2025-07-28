@@ -9,6 +9,7 @@
     <link rel="icon" href="imagens/favicon-azul.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    
     <title>Novo Cadastro</title>
 </head>
 
