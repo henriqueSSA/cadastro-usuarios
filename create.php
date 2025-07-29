@@ -31,7 +31,7 @@
                 <label for="data_nasc">Data de Nascimento:</label><br>
                 <input type="date" id="data_nasc" name="data_nasc" max="2009-07-20" required><br><br>
                 <label for="idade">Idade:</label><br>
-                <input type="number" id="idade" name="idade" required><br>
+                <input type="number" id="idade" name="idade" required readonly><br>
                 <div class="style-btcadastro-container">
                     <button class="style-cadastro" type="button" onclick="home()">Anterior</button>
                     <button class="style-cadastro" type="button" onclick="proximoForm()">Proximo</button>
