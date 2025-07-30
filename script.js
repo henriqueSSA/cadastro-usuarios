@@ -10,8 +10,6 @@ function home() {
 }
 
 
-
-
 function mostrarLoading() {
     // Mostra o loading
     document.getElementById('barra-progresso').style.display = 'none';
@@ -24,23 +22,24 @@ function proximoForm() {
 }
 
 
-    document.getElementById("data_nasc").addEventListener("change", function () {
-      const dataNasc = new Date(this.value);
-      const hoje = new Date();
+   document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("data_nasc").addEventListener("change", function () {
+    const dataNasc = new Date(this.value);
+    const hoje = new Date();
 
-      console.log("Data de Nascimento:");
+    let idade = hoje.getFullYear() - dataNasc.getFullYear();
+    const mes = hoje.getMonth() - dataNasc.getMonth();
 
-      let idade = hoje.getFullYear() - dataNasc.getFullYear();
-      const mes = hoje.getMonth() - dataNasc.getMonth();
+    if (mes < 0 || (mes === 0 && hoje.getDate() < dataNasc.getDate())) {
+      idade--;
+    }
 
-      // Ajuste se ainda não fez aniversário este ano
-      if (mes < 0 || (mes === 0 && hoje.getDate() < dataNasc.getDate())) {
-        idade--;
-      }
-
-      // Preencher o campo de idade
-      document.getElementById("idade").value = idade >= 0 ? idade : '';
-    });
+    const campoIdade = document.getElementById("idade");
+    if (campoIdade) {
+      campoIdade.value = idade >= 0 ? idade : '';
+    }
+  });
+});
 
 $(document).ready(function () {
 

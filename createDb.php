@@ -1,13 +1,20 @@
 <?php
 $servername = "localhost";
-$username = "username";
-$password = "password";
+$username = "root";
+$password = "";
 $dbname = "Cadastro";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $conn = new PDO("mysql:host=$servername", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+  $sql = "CREATE DATABASE IF NOT EXISTS Cadastro";
+  $conn->exec($sql);
+
+  echo "Banco de dados criado com sucesso!<br>";
+
+  require_once "conection.php";
 
   // sql to create table
   $sql = "CREATE TABLE Pessoas (
@@ -27,7 +34,7 @@ try {
 
   // use exec() because no results are returned
   $conn->exec($sql);
-  echo "Tabela de Pessoas criada com successo";
+  echo "Tabela de Pessoas criada com sucesso!<br>";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }
