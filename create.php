@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <link rel="icon" href="imagens/favicon-azul.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    
+
     <title>Novo Cadastro</title>
 </head>
 
@@ -21,7 +21,7 @@
         <h1>Formulário Multi-Etapas</h1>
         <!-- Primeira Etapa do Formulário -->
         <div class="style-form1" id="style-form1">
-            <form action="/action_page.php" autocomplete="on">
+            <form action="newUser.php" autocomplete="on" method="POST">
                 <label for="name">Nome:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
                 <label for="cpf">CPF:</label><br>
@@ -53,7 +53,7 @@
             <input type="text" id="cidade" name="cidade" required><br>
             <div class="style-btcadastro-container">
                 <button class="style-cadastro" type="button" onclick="RedirectForms()">Anterior</button>
-                <button class="style-cadastro" type="button" onclick="mostrarLoading()">Salvar</button>
+                <button class="style-cadastro" type="submit" value="enviar">Salvar</button>
             </div>
             </form>
         </div>
