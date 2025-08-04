@@ -106,6 +106,62 @@ $(document).ready(function () {
 });
 
 
+function validarPrimeiraEtapa() {
+  // pegar os inputs
+  const name = document.getElementById('name');
+  const cpf = document.getElementById('cpf');
+  const email = document.getElementById('email');
+  const dataNasc = document.getElementById('data_nasc');
+
+  // exemplo simples de validação
+  if (!name.value.trim()) {
+    alert('Por favor, preencha o nome');
+    name.focus();
+    return false;
+  }
+
+  if (!cpf.value.trim()) {
+    alert('Por favor, preencha o CPF');
+    cpf.focus();
+    return false;
+  }
+  // aqui você pode validar o formato do CPF com regex se quiser
+
+  if (!email.value.trim() || !email.checkValidity()) {
+    alert('Por favor, preencha um email válido');
+    email.focus();
+    return false;
+  }
+
+  if (!dataNasc.value) {
+    alert('Por favor, preencha a data de nascimento');
+    dataNasc.focus();
+    return false;
+  }
+
+  // Se passou tudo
+  return true;
+}
+
+window.validationForm = function() {
+  if (validarPrimeiraEtapa()) {
+    document.getElementById('style-form1').style.display = 'none';
+    document.getElementById('style-form2').style.display = 'block';
+
+    // Atualizar a barra de progresso se quiser aqui
+  }
+}
+
+const botaoSalvar = document.getElementById('botaoSalvar');
+
+botaoSalvar.addEventListener('click', function(event) {
+    alert('Cadastro realizado com sucesso!');
+});
+
+
+
+
+
 
 
 
