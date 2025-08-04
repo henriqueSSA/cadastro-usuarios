@@ -27,7 +27,7 @@
                 <img src="imagens/imagem-listar.png" alt="imagem que ilustra o Cadastro" class="imagem-listar">
                 <h3>Listar Cadastros</h3>
                 <h4>Veja todos os cadastros feitos</h4>
-                <button class="style-listar" type="button" onclick="alert('Hello World!')">Ver Cadastros</button>
+                <button class="style-listar" type="button" onclick="RedirectForms2()">Ver Cadastros</button>
             </div>
         </div>
     </main>

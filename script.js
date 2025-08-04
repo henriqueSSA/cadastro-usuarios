@@ -4,6 +4,12 @@ function RedirectForms() {
 
 }
 
+function RedirectForms2() {
+    window.location.href = "readerUser.php";
+
+
+}
+
 function home() {
     window.location.href = "index.php";
 
