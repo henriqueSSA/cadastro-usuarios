@@ -10,6 +10,7 @@ function RedirectForms2() {
 
 }
 
+
 function home() {
     window.location.href = "index.php";
 

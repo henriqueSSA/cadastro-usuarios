@@ -177,6 +177,36 @@ body {
   }
 }
 
+.style-titleUser{
+    text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table{
+    width: 100%;
+}
+
+.style-listaUser{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    padding-bottom: 20%;
+    padding: 1%;
+    width: 90%;
+}
+
+tr:nth-child(even) {
+  background-color: #c9d3d3;
+}
+
+
 
 
 

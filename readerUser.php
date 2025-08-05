@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagens/favicon-azul.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Lista Cadastros</title>
 </head>
 
 <body>
 
-    <div>
-        <h1>Cadastros Realizados</h1>
+    <div class="style-listaUser">
+        <h1 class="style-titleUser">Cadastros Realizados</h1>
         <table>
             <tr>
+                <th>ID Usuario</th>
                 <th>Nome</th>
                 <th>CPF</th>
                 <th>EMAIL</th>
@@ -26,15 +28,28 @@
                 <th>CIDADE</th>
                 <th>ACOES</th>
             </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
+            <?php if (!empty($pessoas)): ?>
+                <?php foreach ($pessoas as $pessoa): ?>
+                    <tr>
+                        <td><?= htmlspecialchars($pessoa['id']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['nome']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['cpf']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['email']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['data_nasc']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['idade']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['cep']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['uf']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['bairro']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['numero']) ?></td>
+                        <td><?= htmlspecialchars($pessoa['cidade']) ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <tr>
+                    <td colspan="12">Nenhum registro encontrado.</td>
+                </tr>
+            <?php endif; ?>
+
             </tr>
         </table>
     </div>
