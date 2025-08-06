@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(247, 248, 248);
-    
+
 }
 
 .destaque {
@@ -28,8 +28,8 @@ body {
     margin-top: 10px;
     margin-left: 190px;
     margin-right: 190px;
-    
-    
+
+
 }
 
 
@@ -45,33 +45,37 @@ body {
 }
 
 
-.style-title,.style-subtitle {
-    text-align: center;   
+.style-title,
+.style-subtitle {
+    text-align: center;
 }
 
-.style-footer{
+.style-footer {
     margin-top: 200px;
-    text-align: center;    
+    text-align: center;
 }
 
-.style-header{
+.style-header {
     margin-top: 130px;
     margin-bottom: 60px;
 }
 
-.imagem-cadastro, .imagem-listar {
+.imagem-cadastro,
+.imagem-listar {
     max-width: 100%;
     height: auto;
 }
 
 @media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .main{
-    width: 100%;
-  }
+
+    /* For mobile phones: */
+    .main {
+        width: 100%;
+    }
 }
 
-.style-cadastro, .style-listar{
+.style-cadastro,
+.style-listar {
     font-size: 1.2em;
     color: rgb(236, 228, 228);
     border: 2px solid #fcf9f9;
@@ -83,8 +87,8 @@ body {
 
 /* fim do css arquivo index.php */
 
-.style-tform{
-    align-items:center;
+.style-tform {
+    align-items: center;
     border: 2px solid #ccc;
     border-radius: 10px;
     background: #fff;
@@ -92,28 +96,28 @@ body {
     margin-top: 5%;
     padding-bottom: 20%;
     padding: 5%;
-    
+
 }
 
-.style-form{
+.style-form {
     padding-left: 1%;
     font-family: 'Montserrat';
     font-size: 1.2em;
     color: black;
-    
+
 
 }
 
-.style-btcadastro-container{
-    font-size: 1.2em;  
+.style-btcadastro-container {
+    font-size: 1.2em;
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content:center;
+    justify-content: center;
     gap: 70px;
 }
 
-.style-cadastro{
+.style-cadastro {
     font-size: 1.2em;
     color: rgb(236, 228, 228);
     border: 2px solid #fcf9f9;
@@ -122,76 +126,84 @@ body {
     background: rgb(69, 69, 224);
 }
 
-#data_nasc{
+#data_nasc {
     width: 100px;
     height: 30px;
 }
 
-#idade{
+#idade {
     width: 40px;
     height: 30px;
 }
 
-#name, #email{
+#name,
+#email {
     width: 100%;
     height: 30px;
     font-size: 16px;
 }
 
-#cpf{
-    height:30px;
+#cpf {
+    height: 30px;
 }
 
-#cep, #uf, #bairro, #numero, #cidade {
+#cep,
+#uf,
+#bairro,
+#numero,
+#cidade {
     width: 100%;
     height: 30px;
     font-size: 16px;
 }
 
-#style-form2{
+#style-form2 {
     display: none;
 }
 
 .barra-container {
-  width: 100%;
-  height: 20px;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .barra-progresso {
-  height: 100%;
-  background-color: #3498db;
-  width: 50%;
-  animation: preencherDe50a100 2s ease-out forwards;
+    height: 100%;
+    background-color: #3498db;
+    width: 50%;
+    animation: preencherDe50a100 2s ease-out forwards;
 }
 
 @keyframes preencherDe50a100 {
-  from {
-    width: 50%;
-  }
-  to {
-    width: 100%;
-  }
+    from {
+        width: 50%;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
-.style-titleUser{
+.style-titleUser {
     text-align: center;
 }
 
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
 }
 
-table{
+table {
     width: 100%;
 }
 
-.style-listaUser{
+.style-listaUser {
     border: 2px solid #ccc;
     border-radius: 10px;
     background: #fff;
@@ -203,12 +215,24 @@ table{
 }
 
 tr:nth-child(even) {
-  background-color: #c9d3d3;
+    background-color: #c9d3d3;
 }
 
 
+.style-edite{
+    font-size: 1.2em;
+    color: rgb(236, 228, 228);
+    border: 2px solid #fcf9f9;
+    border-radius: 10px;
+    padding: 2%;
+    background: rgb(69, 69, 224);
+}
 
-
-
-
-
+.style-excluir{
+    font-size: 1.2em;
+    color: rgb(236, 228, 228);
+    border: 2px solid #fcf9f9;
+    border-radius: 10px;
+    padding: 2%;
+    background: rgb(6, 105, 59); 
+}
