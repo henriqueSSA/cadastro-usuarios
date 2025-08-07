@@ -46,11 +46,13 @@
                     echo "<td>" . $pessoa['numero'] . "</td>";
                     echo "<td>" . $pessoa['cidade'] . "</td>";
                     echo '<td>
+                    <div class="style-btacoes">
                     <form action="deleteUser.php" method="post" onsubmit="return confirm(\'Tem certeza que deseja excluir?\');">
                     <input type="hidden" name="id" value="' . $pessoa['id'] . '">
                     <button class= "style-excluir" id = "style-excluir" type="submit">Excluir</button>
                     </form>
-                   <button class= "style-edite" id = "style-edite" type="submit">Editar</button>
+                   <button class= "style-edite" id = "style-edite" type="button" onclick="RedirectForms3();">Editar</button>
+                   </div>
                     </td>';
                     echo "</tr>";
                 }
@@ -63,7 +65,7 @@
         </table>
 
     </div>
-        <button class="style-cadastro" type="button" onclick="home()">Anterior</button>
+        <button class="style-readerListar" type="button" onclick="home()">Anterior</button>
         
 </body>
 

@@ -10,6 +10,10 @@ function RedirectForms2() {
 
 }
 
+function RedirectForms3(){
+  window.location.href = "updateUser.php";
+}
+
 
 function home() {
     window.location.href = "index.php";
